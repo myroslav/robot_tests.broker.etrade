@@ -390,7 +390,7 @@ Login
     #Click Button    xpath=//button[@type='submit']
     Sleep   2
     #Click Element   xpath=(//td[contains(@class, 'qa_item_name')]//a)[1]
-    click element   xpath=//a[contains(@href,'/Bid/Details')]
+    click element   xpath=//h4/a[contains(@href,'/Bid/Details')]
     sleep   2
     Wait Until Page Contains Element      xpath=//input[contains(@class, 'btn-danger')]     20
     Click button        xpath=//input[contains(@class, 'btn-danger')]
@@ -406,7 +406,7 @@ Login
     Selenium2Library.Switch Browser     ${ARGUMENTS[0]}
     Go to   ${USERS.users['${ARGUMENTS[0]}'].default_page}
     Sleep   2
-    click element   xpath=//a[contains(@href,'/Bid/Details')]
+    click element   xpath=//h4/a[contains(@href,'/Bid/Details')]
     sleep   2
     click element   xpath=//a[contains(@href, 'Bid/Edit')]
     sleep   2
@@ -429,7 +429,7 @@ Login
     Selenium2Library.Switch Browser     ${ARGUMENTS[0]}
     Go to   ${USERS.users['${ARGUMENTS[0]}'].default_page}
     Sleep   2
-    click element   xpath=//a[contains(@href,'/Bid/Details')]
+    click element   xpath=//h4/a[contains(@href,'/Bid/Details')]
     sleep   2
     click element   xpath=//a[contains(@href, 'Bid/Edit')]
     sleep   2
@@ -460,7 +460,7 @@ Login
     Selenium2Library.Switch Browser     ${ARGUMENTS[0]}
     Go to   ${USERS.users['${ARGUMENTS[0]}'].default_page}
     Sleep   2
-    click element   xpath=//a[contains(@href,'/Bid/Details')]
+    click element   xpath=//h4/a[contains(@href,'/Bid/Details')]
     sleep   2
     click element   xpath=//a[contains(@href, 'Bid/Edit')]
     sleep   2
@@ -485,7 +485,7 @@ Login
     Selenium2Library.Switch Browser     ${ARGUMENTS[0]}
     Go to   ${USERS.users['${ARGUMENTS[0]}'].default_page}
     Sleep   2
-    click element   xpath=//a[contains(@href,'/Bid/Details')]
+    click element   xpath=//h4/a[contains(@href,'/Bid/Details')]
     sleep   2
     ${result}=       get element attribute     xpath=//a[contains(@href,'auction')]@href
     [Return]   ${result}
